@@ -20,8 +20,8 @@ env = environ.Env(
     CHAT_PW = (str, '')
 )
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-env.read_env(os.path.join(BASE_DIR, '.env','.env'))
+BASE_DIR = Path(__file__).resolve().parent
+env.read_env(os.path.join(BASE_DIR, 'config','.env'))
 
 # General settings
 LOG_LVL = env.str('LOG_LVL')
